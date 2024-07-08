@@ -72,3 +72,7 @@ func sign(method, path, timestamp, signingKey, body string) string {
 	h.Write([]byte(fmt.Sprintf("%s%s%s%s", timestamp, method, path, body)))
 	return base64.StdEncoding.EncodeToString(h.Sum(nil))
 }
+
+
+
+
